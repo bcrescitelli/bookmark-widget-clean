@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .bookmark-button {
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: fit-content;
+    }
+
+    .bookmark-button:hover {
+      background-color: #005a9e;
+    }
+  </style>
+</head>
+<body>
+
+<button class="bookmark-button" onclick="handleBookmark()">Bookmark MyBiz Site</button>
+
+<script>
+  function handleBookmark() {
+    const url = 'https://microsoft.sharepoint.com/:u:/r/teams/OurJourneyAheadResources/SitePages/[DRAFT]-AD-Territory-adn.aspx?csf=1&web=1&share=EaliaerNiRdPvpfl4lXSXwoB7zvUxnOzUdg_GRE6SC3gwA&e=lNXa7L';
+    window.open(url, '_blank');
+
+    setTimeout(() => {
+      alert('To bookmark this page:\n\n★ Press Ctrl+D (Windows) or Cmd+D (Mac) ★');
+    }, 500);
+  }
+</script>
+
+</body>
+</html>
